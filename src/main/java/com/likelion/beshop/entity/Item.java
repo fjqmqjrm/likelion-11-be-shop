@@ -7,13 +7,14 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name="item")
 @Getter
 @Setter
-@ToString
 public class Item {
     @Id
     @Column(name = "item_id")
